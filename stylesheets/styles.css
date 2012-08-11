@@ -4232,7 +4232,7 @@ a.label:hover, a.badge:hover {
 /* line 14, styles.css.scss */
 body {
   margin-top: 70px;
-  background-image: url("images/furley_bg.png"); }
+  background-image: url("../images/furley_bg.png"); }
 
 /* line 19, styles.css.scss */
 h1 {
