@@ -11,4 +11,4 @@
 /build
 
 # Ignore Sass' cache
-/.sass-cache
+.sass-cache
