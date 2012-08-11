@@ -2,6 +2,8 @@
 # Compass
 ###
 
+require 'slim'
+
 # Susy grids in Compass
 # First: gem install compass-susy-plugin
 # require 'susy'
