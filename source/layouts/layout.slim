@@ -36,8 +36,13 @@ html
                 li == link_to 'C#', '#'
                 li == link_to 'FORTRAN', '#'
 
+            li.divider-vertical
+
+            li
+              == link_to 'Log In', '#'
 
 
 
 
-    == yield
+    .container
+      == yield
