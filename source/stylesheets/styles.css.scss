@@ -3,13 +3,28 @@
 // Include responsive Bootstrap styles
 // @import "bootstrap-responsive";
 
+// ----||-------------------------------
+//     ||    BASE
+// ====||===============================
+
+$vertical-spacing: 30px;
+
+$light-highlight: #e3e3e3;
+
 body {
   margin-top: 70px;
   background-image: url('/images/furley_bg.png');
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: $vertical-spacing;
+}
+
+.footer {
+  border-top: 1px solid $light-highlight;
+  margin-top: $vertical-spacing;
+  text-align: center;
+  padding: 20px;
 }
 
 // ----||-------------------------------
@@ -22,5 +37,26 @@ h1 {
     font-weight: bold;
     text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
     float: right;
+  }
+}
+
+// ----||-------------------------------
+//     ||    MAIN PAGE
+// ====||===============================
+
+.wells {
+  margin-top: $vertical-spacing;
+
+  .well {
+    background-color: $light-highlight;
+    text-align: center;
+
+    h2 { text-align: left; margin-bottom: 10px; }
+    p { text-align: left; display: block; min-height: 100px; }
+
+    img {
+      margin-top: 20px;
+      margin-bottom: $vertical-spacing;
+    }
   }
 }

@@ -49,6 +49,21 @@ require 'slim'
 #   end
 # end
 
+helpers do
+  def well(title, image, button_text)
+    <<-MARKUP
+      <div class='span4'>
+        <div class='well'>
+          <h2>#{title}</h2>
+          <p>#{lorem.sentences(2)}</p>
+          #{image_tag(image)}<br>
+          <a class="btn btn-primary btn-large" href="#">#{button_text}</a>
+        </div>
+      </div>
+    MARKUP
+  end
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
