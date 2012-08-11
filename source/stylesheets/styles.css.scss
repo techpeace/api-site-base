@@ -1,5 +1,22 @@
-// I gather this file is a starting point for the project.
 @import "bootstrap";
 
 // Include responsive Bootstrap styles
 // @import "bootstrap-responsive";
+
+body {
+  padding: 40px;
+  background-image: url('/images/furley_bg.png');
+}
+
+// ----||-------------------------------
+//     ||    NAVBAR
+// ====||===============================
+
+.navbar {
+  a.brand {
+    color: black;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+    float: right;
+  }
+}

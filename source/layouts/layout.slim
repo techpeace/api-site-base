@@ -13,4 +13,31 @@ html
     == javascript_include_tag  "all"
 
   body class=page_classes
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          == link_to 'Product', '#', class: 'brand'
+
+          ul.nav
+            li.active
+              == link_to 'Documentation', '#'
+            li
+              == link_to 'Getting Started', '#'
+            li.dropdown
+              a href='#' class='dropdown-toggle' data-toggle='dropdown'
+                | Examples
+                b class='caret'
+
+              ul.dropdown-menu
+                li == link_to 'Ruby', '#'
+                li == link_to 'Python', '#'
+                li == link_to 'PHP', '#'
+                li == link_to 'Java', '#'
+                li == link_to 'C#', '#'
+                li == link_to 'FORTRAN', '#'
+
+
+
+
+
     == yield
